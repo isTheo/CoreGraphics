@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project27_CoreGraphics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SK7-en-h2E">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SK7-en-h2E">
+                                <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q98-x1-XpO">
-                                <rect key="frame" x="158" y="775" width="75" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q98-x1-XpO">
+                                <rect key="frame" x="368" y="1025" width="74" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Redraw">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
@@ -33,11 +33,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="q98-x1-XpO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158" id="575-bK-J6P"/>
-                            <constraint firstItem="q98-x1-XpO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="A2f-AY-BSY"/>
-                            <constraint firstItem="q98-x1-XpO" firstAttribute="centerX" secondItem="SK7-en-h2E" secondAttribute="centerX" id="OrD-Rw-jcy"/>
-                            <constraint firstItem="q98-x1-XpO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZeB-JY-M0c"/>
-                            <constraint firstItem="q98-x1-XpO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="728" id="qFG-E3-VWO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q98-x1-XpO" secondAttribute="bottom" constant="20" id="06T-rf-siv"/>
+                            <constraint firstItem="q98-x1-XpO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="368" id="Bjf-Gh-17g"/>
+                            <constraint firstItem="SK7-en-h2E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kc5-Ci-Dty"/>
+                            <constraint firstItem="SK7-en-h2E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ps3-0c-pCJ"/>
+                            <constraint firstItem="SK7-en-h2E" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QqG-yv-rE7"/>
+                            <constraint firstItem="q98-x1-XpO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1005" id="h3T-1r-4zd"/>
+                            <constraint firstItem="SK7-en-h2E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pzJ-Us-l4c"/>
+                            <constraint firstItem="SK7-en-h2E" firstAttribute="centerX" secondItem="q98-x1-XpO" secondAttribute="centerX" id="tc3-03-y2S"/>
                         </constraints>
                     </view>
                     <connections>
@@ -46,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="110.76923076923076" y="4.9763033175355451"/>
+            <point key="canvasLocation" x="110.37037037037037" y="4.4444444444444446"/>
         </scene>
     </scenes>
     <resources>
