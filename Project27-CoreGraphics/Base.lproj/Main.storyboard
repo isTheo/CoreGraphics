@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,34 +13,31 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project27_CoreGraphics" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SK7-en-h2E">
-                                <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q98-x1-XpO">
-                                <rect key="frame" x="368" y="1025" width="74" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YC-b3-DYO">
+                                <rect key="frame" x="158" y="775" width="75" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Redraw">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
                                 <connections>
-                                    <action selector="redrawTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wj4-PB-C6w"/>
+                                    <action selector="redrawTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Uk-ja-vaz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q98-x1-XpO" secondAttribute="bottom" constant="20" id="06T-rf-siv"/>
-                            <constraint firstItem="q98-x1-XpO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="368" id="Bjf-Gh-17g"/>
-                            <constraint firstItem="SK7-en-h2E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kc5-Ci-Dty"/>
-                            <constraint firstItem="SK7-en-h2E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ps3-0c-pCJ"/>
-                            <constraint firstItem="SK7-en-h2E" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QqG-yv-rE7"/>
-                            <constraint firstItem="q98-x1-XpO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1005" id="h3T-1r-4zd"/>
-                            <constraint firstItem="SK7-en-h2E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pzJ-Us-l4c"/>
-                            <constraint firstItem="SK7-en-h2E" firstAttribute="centerX" secondItem="q98-x1-XpO" secondAttribute="centerX" id="tc3-03-y2S"/>
+                            <constraint firstItem="SK7-en-h2E" firstAttribute="centerX" secondItem="3YC-b3-DYO" secondAttribute="centerX" id="ERz-gX-ZvP"/>
+                            <constraint firstItem="SK7-en-h2E" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UEp-Vb-pCU"/>
+                            <constraint firstItem="3YC-b3-DYO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="V3Y-CO-t8L"/>
+                            <constraint firstItem="SK7-en-h2E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V9m-UF-pAc"/>
+                            <constraint firstItem="SK7-en-h2E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-47" id="e0n-Gk-Xh7"/>
+                            <constraint firstItem="3YC-b3-DYO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="158" id="hvV-H8-ANK"/>
+                            <constraint firstItem="SK7-en-h2E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mUU-v1-KV2"/>
                         </constraints>
                     </view>
                     <connections>
@@ -49,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="110.37037037037037" y="4.4444444444444446"/>
+            <point key="canvasLocation" x="109.23076923076923" y="4.2654028436018958"/>
         </scene>
     </scenes>
     <resources>
