@@ -22,7 +22,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YC-b3-DYO">
                                 <rect key="frame" x="158" y="775" width="75" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Redraw"/>
                                 <connections>
                                     <action selector="redrawTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Uk-ja-vaz"/>
                                 </connections>

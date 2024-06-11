@@ -162,33 +162,33 @@ class ViewController: UIViewController {
     
     
     func drawImagesAndText() {
-        // 1
+
         let renderer = UIGraphicsImageRenderer(size: CGSize(width: 512, height: 512))
 
         let img = renderer.image { ctx in
-            // 2
+
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.alignment = .center
 
-            // 3
+
             let attrs: [NSAttributedString.Key: Any] = [
                 .font: UIFont.systemFont(ofSize: 36),
                 .paragraphStyle: paragraphStyle
             ]
 
-            // 4
+
             let string = "The best-laid schemes o'\nmice an' men gang aft agley"
             let attributedString = NSAttributedString(string: string, attributes: attrs)
 
-            // 5
+
             attributedString.draw(with: CGRect(x: 32, y: 32, width: 448, height: 448), options: .usesLineFragmentOrigin, context: nil)
 
-            // 5
+
             let mouse = UIImage(named: "mouse")
             mouse?.draw(at: CGPoint(x: 300, y: 150))
         }
 
-        // 6
+
         imageView.image = img
     }
     
